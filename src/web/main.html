@@ -6,8 +6,10 @@
         
         <!--Local link-->
         <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <script src="../script/script.js"></script>
 
         <!--Icon link-->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -15,7 +17,7 @@
     </head>
     
     <body>
-        <div id="profile" class="content_box">
+        <div id="profile" class="content-box">
             <img src="../../img/13518092.jpg" alt="profile picture" id="photo">
             <p id="name"><b>Izharulhaq</b></p>
             <div id="contact">
@@ -39,12 +41,12 @@
             </div>
         </div>
         
-        <div id="content" class="content_box">
-            <button class="info_button" id="general_button">
-                <i class='fas fa-angle-down'></i> <b>General</b>
+        <div id="additional-info" class="content-box">
+            <button class="info-button" id="general-button" onclick="show_info('general')">
+                <i class='fas fa-angle-up' id="general-arrow-up"></i></i><i class='fas fa-angle-down' id="general-arrow-down"></i> <b>General</b>
             </button>
-            <div class="info_box" id="general_box">
-                <table id="table_info">
+            <div class="info-box" id="general-box">
+                <table id="table-info">
                     <tr>
                         <td>Nickname</td>
                         <td>Arul</td>
@@ -56,6 +58,26 @@
                     <tr>
                         <td>Hobbies</td>
                         <td>Reading, gaming</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button class="info-button" id="education-button" onclick="show_info('education')">
+                <i class='fas fa-angle-up' id="education-arrow-up"></i></i><i class='fas fa-angle-down' id="education-arrow-down"></i> <b>Education</b>
+            </button>
+            <div class="info-box" id="education-box">
+                <table id="table-info">
+                    <tr>
+                        <td>2012-2015</td>
+                        <td>MTs Pembangunan UIN Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>2015-2018</td>
+                        <td>MAN Insan Cendekia Serpong</td>
+                    </tr>
+                    <tr>
+                        <td>2018-now</td>
+                        <td>STEI ITB</td>
                     </tr>
                 </table>
             </div>
