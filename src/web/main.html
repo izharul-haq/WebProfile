@@ -1,20 +1,64 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
     <head>
         <title>Web Profile</title>
-        <link rel="stylesheet" type="text/css" href="../style/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Local link-->
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+
+        <!--Icon link-->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     </head>
     
     <body>
-        <div id="mainbox">
+        <div id="profile" class="content_box">
             <img src="../../img/13518092.jpg" alt="profile picture" id="photo">
             <p id="name"><b>Izharulhaq</b></p>
-            <p id="status">3rd year informatics student at<br>Institut Teknologi Bandung</p>
+            <div id="contact">
+                <ul>
+                    <li>
+                        <a href="https://github.com/izharul-haq" target="_blank">
+                            <i class='fab fa-github contact-icon'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/izharul-haq-5ba295170" target="_blank">
+                            <i class='fab fa-linkedin contact-icon'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:izharhaq00@gmail.com">
+                            <i class='fas fa-mail-bulk contact-icon'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div id="footer">
-            <p>Izharulhaq - 13518092</p>
+        
+        <div id="content" class="content_box">
+            <button class="info_button" id="general_button">
+                <i class='fas fa-angle-down'></i> <b>General</b>
+            </button>
+            <div class="info_box" id="general_box">
+                <table id="table_info">
+                    <tr>
+                        <td>Nickname</td>
+                        <td>Arul</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>19 years old</td>
+                    </tr>
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>Reading, gaming</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </body>
 </html>
